@@ -16,7 +16,7 @@ class SecondFactorForm(forms.Form):
 
 
 class KeyResponseForm(SecondFactorForm):
-    response = forms.CharField()
+    response = forms.CharField(widget=forms.TextInput(attrs={'autofocus': 'autofocus'}))
 
     def __init__(self, *args, **kwargs):
         super(KeyResponseForm, self).__init__(*args, **kwargs)
