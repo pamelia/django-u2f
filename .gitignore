@@ -9,3 +9,4 @@ testproj/localhost.*
 
 # Unit test / coverage reports
 .tox/
+.idea
